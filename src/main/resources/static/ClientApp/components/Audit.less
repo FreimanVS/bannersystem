@@ -1,0 +1,51 @@
+@table-border-color: #44475C;
+@hover-color: #717699;
+
+table {
+    font-family: 'Open Sans', sans-serif;
+    width: 750px;
+    border-collapse: collapse;
+    border: 3px solid @table-border-color;
+    margin: 10px 10px 0 10px;
+    th {
+        text-transform: uppercase;
+        text-align: left;
+        background: @table-border-color;
+        color: #FFF;
+        cursor: pointer;
+        padding: 8px;
+        min-width: 30px;
+    }
+
+    th:hover {
+          background: @hover-color;
+    }
+
+    td {
+        text-align: left;
+        padding: 8px;
+        border-right: 2px solid #7D82A8;
+    }
+
+    td:last-child {
+        border-right: none;
+        min-width: 100px;
+    }
+
+    tbody tr:nth-child(2n) td {
+        background: #D4D8F9;
+    }
+}
+
+.number {
+    display: inline-block;
+    padding: 4px 10px;
+    color: #FFF;
+    border-radius: 4px;
+    background: @table-border-color;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.number:hover, .number.active {
+    background: @hover-color;
+}

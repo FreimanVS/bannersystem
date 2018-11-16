@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "./built/",
+    "sourceMap": true,
+    "strict": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es6"
+  },
+  "include": [
+    "./src/main/resources/static/ClientApp/**/*"
+  ]
+}
